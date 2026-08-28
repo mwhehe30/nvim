@@ -1,0 +1,13 @@
+# Log Neovim
+nvim.log
+startup.log
+
+# File sisa / sketsa
+Untitled
+
+# Nested repo & folder internal
+.config_study/
+.codex/
+
+# Freebuff internal
+.freebuff/
