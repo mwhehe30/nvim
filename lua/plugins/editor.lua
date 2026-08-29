@@ -166,7 +166,8 @@ return {
 					local themes = {
 						"everforest",
 						"sora",
-						"cursor-dark",
+						"gruvbox-material",
+						"nightfox",
 						"flexoki",
 						"oldworld",
 						"everblush",
@@ -184,14 +185,13 @@ return {
 						"vesper",
 						"monochrome",
 						"tundra",
-						"gruvbox",
-						"hitotose",
 					}
 
 					require("lazy").load({
 						plugins = {
 							"sora",
-							"cursor-dark.nvim",
+							"gruvbox-material",
+							"nightfox.nvim",
 							"flexoki",
 							"oldworld.nvim",
 							"everblush",
@@ -209,8 +209,6 @@ return {
 							"vesper.nvim",
 							"monochrome.nvim",
 							"nvim-tundra",
-							"gruvbox.nvim",
-							"hitotose.nvim",
 						},
 					})
 					vim.ui.select(themes, { prompt = "Choose theme" }, function(choice)

@@ -29,10 +29,6 @@ return {
 		end,
 	},
 	{
-		"ydkulks/cursor-dark.nvim",
-		lazy = true,
-	},
-	{
 		"kepano/flexoki-neovim",
 		name = "flexoki",
 		lazy = true,
@@ -182,17 +178,24 @@ return {
 		lazy = true,
 	},
 	{
-		"ellisonleao/gruvbox.nvim",
+		"sainnhe/gruvbox-material",
 		lazy = true,
-		opts = {
-			contrast = "hard",
-		},
 		init = function()
-			vim.o.background = "dark"
+			vim.g.gruvbox_material_background = "hard"
+			vim.g.gruvbox_material_enable_italic = 1
+			vim.g.gruvbox_material_transparent_background = 0
 		end,
 	},
 	{
-		"aidyak/hitotose.nvim",
+		"EdenEast/nightfox.nvim",
 		lazy = true,
-	},
-}
+		opts = {
+			styles = {
+				comments = "italic",
+				functions = "NONE",
+				keywords = "NONE",
+				strings = "NONE",
+				variables = "NONE",
+			},
+		},
+	}
